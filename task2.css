@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebd7d7;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #c59696;
+    color: black;
+  }
+  
+  .nav a {
+    color: black (141, 142, 155);
+    margin: 0 1em;
+    text-decoration: none;
+  }
+  
+  .gallery-section, .contact-section {
+    padding: 1em;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 135px;
+  }
+  
+  .product-card {
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    background-color:black (160, 209, 126);
+    padding: 1em;
+    border-radius: 10px;
+  }
+  
+  label {
+    margin-top: 1em;
+  }
+  
+  input, textarea, button {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+  }
+  
+  button {
+    margin-top: 1em;
+    padding: 0.8em;
+    background-color: #a58a8a;
+    color: black (157, 157);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:whitesmoke;
+  }
+  
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+.todo-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.todo-container {
+  display: 90%;
+  align-items: center;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+#add-task {
+  padding: 4px 12px;
+}
+
+#todo-list {
+  margin-top: 15px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+#todo-list li {
+  padding: 10px;
+  margin: 5px 0;
+  display: flexbox;
+  align-items: center;
+  background-color: #e0e0e0;
+}
+
+#todo-list li.completed {
+  text-decoration: line-through;
+  color: #777;
+}
+
+#todo-list button {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
